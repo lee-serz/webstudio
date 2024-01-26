@@ -1,0 +1,20 @@
+.cases {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.title {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 39.06px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 144%; /* 56.246px */
+  margin-bottom: 50px;
+}
+
+@media (max-width: 758px) {
+    
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="libs/fullpage/jquery.fullPage.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="libs/fullpage/jquery.easings.min.js"></script>
+    <script src="libs/fullpage/scrolloverflow.min.js"></script>
+    <script src="libs/fullpage/jquery.fullPage.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#fullpage").fullpage();
+      });
+    </script>
+  </body>
+</html>
