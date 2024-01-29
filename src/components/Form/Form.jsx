@@ -30,7 +30,7 @@ const Form = () => {
       setIsFormSubmitted(true);
     } catch (error) {
       // Обработка ошибок
-      alert.error("Ошибка при отправке данных формы:", error);
+      alert(`Ошибка при отправке данных формы:", ${error}`);
     }
   };
 

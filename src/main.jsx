@@ -4,8 +4,6 @@ import App from "./App.jsx";
 import Form from "./components/Form/Form.jsx";
 import "./index.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import CompleteForm from "./components/Form/CompleteForm.jsx";
-
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <Routes>
