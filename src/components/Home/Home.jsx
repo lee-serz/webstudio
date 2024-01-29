@@ -1,6 +1,7 @@
 import React from "react";
 import s from "./Home.module.css";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const anim_1 = {
   hidden: {
@@ -59,14 +60,16 @@ const Home = () => {
           Конверсия в клик по кнопке ниже равна 47.35% Хочешь увеличить этот
           показатель?
         </motion.p>
-        <motion.button
+        <Link to="/form" className={s.button}>
+          Заказать проект
+
+        </Link>
+        <motion.p
+          className={s.small}
           initial="hidden"
           whileInView={"visible"}
           variants={anim_1}
         >
-          Заказать проект
-        </motion.button>
-        <motion.p initial="hidden" whileInView={"visible"} variants={anim_1}>
           А вдруг мы правы?
         </motion.p>
       </div>
@@ -76,7 +79,7 @@ const Home = () => {
         variants={anim_3}
         className={s.gif}
       >
-        <img src="/movie.gif" alt="" />
+        <img src="" alt="" />
       </motion.div>
     </motion.div>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import s from "./Footer.module.css";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const anim_1 = {
   hidden: {
@@ -50,14 +51,9 @@ const Footer = () => {
         </motion.span>
         Стартуем разработку вашего сайта или веб-приложения?
       </motion.div>
-      <motion.div
-        initial="hidden"
-        whileInView={"visible"}
-        variants={anim_1}
-        className={s.link}
-      >
+      <Link to="/form" className={s.link}>
         — Оставить заявку
-      </motion.div>
+      </Link>
     </motion.div>
   );
 };

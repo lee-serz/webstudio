@@ -1,6 +1,7 @@
 import React from "react";
 import s from "./Header.module.css";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 const anim_1 = {
   hidden: {
     x: -100,
@@ -43,7 +44,9 @@ const Header = () => {
         <div className={s.item}>Портфолио</div>
       </motion.div>
       <motion.div variants={anim_3} className={s.order}>
-        <div className={s.button}>Заказать проект</div>
+        <Link to="/form" className={s.button}>
+          Заказать проект
+        </Link>
       </motion.div>
     </motion.header>
   );
