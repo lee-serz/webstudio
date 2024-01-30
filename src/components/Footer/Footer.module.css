@@ -22,7 +22,7 @@
   font-weight: 700;
   line-height: 150%; /* 96px */
   letter-spacing: 7.68px;
-  background: linear-gradient(90deg, #ff6b00 0%, #db00ff 100%);
+  background: linear-gradient(90deg, #ff008a 0%, #8f00ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
@@ -40,11 +40,17 @@
   font-style: normal;
   font-weight: 700;
   line-height: 150%; /* 96px */
-  background: linear-gradient(90deg, #ff6b00 0%, #db00ff 100%);
+  background: linear-gradient(90deg, #ff008a 0%, #8f00ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
-  transition: all 0.2s ease-in;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ffffff00;
+  transition: all 0.2s linear;
+}
+
+.link:hover {
+  border-bottom: 4px solid #ffffff11;
 }
 
 @media (max-width: 758px) {

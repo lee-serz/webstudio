@@ -4,50 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { motion } from "framer-motion";
-
-const anim_1 = {
-  hidden: {
-    x: -100,
-    opacity: 0,
-  },
-  visible: {
-    x: 0,
-    opacity: 1,
-  },
-};
-
-const anim_2 = {
-  hidden: {
-    y: -200,
-    opacity: 0,
-  },
-  visible: {
-    y: 0,
-    opacity: 1,
-  },
-};
-
-const anim_3 = {
-  hidden: {
-    x: 100,
-    opacity: 0,
-  },
-  visible: {
-    x: 0,
-    opacity: 1,
-  },
-};
-
-const anim_4 = {
-  hidden: {
-    y: -150,
-    opacity: 0,
-  },
-  visible: {
-    y: 0,
-    opacity: 1,
-  },
-};
+import { anim_1, anim_3, anim_4 } from "../../../anim.js";
 
 const Carousel = () => {
   const settings = {
@@ -83,19 +40,14 @@ const Carousel = () => {
 
 const data = [
   {
-    title: `Сайт для создания онлайн-курсов "Всем бобра"`,
-    description: `Разработали прототип сайта, UX / UI логику, создрали первые макеты и получили бабки`,
-    img: `/case-1.png`,
-  },
-  {
     title: `Сайт-Портфолио`,
     description: `Разработали прототип сайта, UX / UI логику, создрали первые макеты и получили бабки`,
-    img: `/case-2.png`,
+    img: `/novik.jpg`,
   },
   {
     title: `Блог`,
     description: `Разработали прототип сайта, UX / UI логику, создрали первые макеты и получили бабки`,
-    img: `/case-3.png`,
+    img: `/vlad.jpg`,
   },
 ];
 

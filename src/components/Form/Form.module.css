@@ -7,17 +7,18 @@
 }
 
 .completeform {
-  display: none;
+  display: block;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1000;
 }
 
 .box {
   display: none;
   position: relative;
-  padding: 50px 210px;
+  padding: 30px 210px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -135,6 +136,9 @@
 }
 
 @media (max-width: 758px) {
+  .form {
+    padding: 0px 15px;
+  }
   .text {
     font-size: 28px;
     margin-bottom: 10px;

@@ -1,50 +1,7 @@
 import React from "react";
 import s from "./About.module.css";
 import { motion } from "framer-motion";
-
-const anim_1 = {
-  hidden: {
-    x: -100,
-    opacity: 0,
-  },
-  visible: {
-    x: 0,
-    opacity: 1,
-  },
-};
-
-const anim_2 = {
-  hidden: {
-    y: -200,
-    opacity: 0,
-  },
-  visible: {
-    y: 0,
-    opacity: 1,
-  },
-};
-
-const anim_3 = {
-  hidden: {
-    x: 100,
-    opacity: 0,
-  },
-  visible: {
-    x: 0,
-    opacity: 1,
-  },
-};
-
-const anim_4 = {
-  hidden: {
-    y: -150,
-    opacity: 0,
-  },
-  visible: {
-    y: 0,
-    opacity: 1,
-  },
-};
+import { anim_1, anim_3, anim_4 } from "../../anim.js";
 
 const About = () => {
   return (
@@ -57,13 +14,10 @@ const About = () => {
       >
         — О нас
       </motion.p>
-      <motion.img
-        initial="hidden"
-        whileInView={"visible"}
-        variants={anim_4}
-        src="/we.png"
-        alt=""
-      />
+      <img className={s.we} src="/we.png" />
+      <div className={s.gif}>
+        <img src="stack.gif" alt="" />
+      </div>
       <motion.p
         initial="hidden"
         whileInView={"visible"}

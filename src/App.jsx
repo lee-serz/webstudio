@@ -1,5 +1,6 @@
 import "./App.css";
 import About from "./components/About/About";
+import AnimatedComponent from "./components/AnimatedComponent";
 import Cases from "./components/Cases/Cases";
 import Footer from "./components/Footer/Footer";
 import Form from "./components/Form/Form";
@@ -22,26 +23,28 @@ function App() {
   };
 
   return (
-    <div className="wrapper">
-      <Fullpage className="container">
-        <FullPageSections>
-          <FullpageSection style={SectionStyle}>
-            <Header />
-            <Home />
-          </FullpageSection>
+    <AnimatedComponent>
+      <div className="wrapper">
+        <Fullpage className="container">
+          <FullPageSections>
+            <FullpageSection style={SectionStyle}>
+              <Header />
+              <Home />
+            </FullpageSection>
 
-          <FullpageSection style={SectionStyle}>
-            <About />
-          </FullpageSection>
-          <FullpageSection style={SectionStyle}>
-            <Cases />
-          </FullpageSection>
-          <FullpageSection style={SectionStyle}>
-            <Footer />
-          </FullpageSection>
-        </FullPageSections>
-      </Fullpage>
-    </div>
+            <FullpageSection style={SectionStyle}>
+              <About />
+            </FullpageSection>
+            <FullpageSection style={SectionStyle}>
+              <Cases />
+            </FullpageSection>
+            <FullpageSection style={SectionStyle}>
+              <Footer />
+            </FullpageSection>
+          </FullPageSections>
+        </Fullpage>
+      </div>
+    </AnimatedComponent>
   );
 }
 

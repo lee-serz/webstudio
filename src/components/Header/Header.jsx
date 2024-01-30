@@ -2,38 +2,8 @@ import React from "react";
 import s from "./Header.module.css";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-const anim_1 = {
-  hidden: {
-    x: -100,
-    opacity: 0,
-  },
-  visible: {
-    x: 0,
-    opacity: 1,
-  },
-};
+import { anim_2, anim_3 } from "../../anim.js";
 
-const anim_2 = {
-  hidden: {
-    y: -200,
-    opacity: 0,
-  },
-  visible: {
-    y: 0,
-    opacity: 1,
-  },
-};
-
-const anim_3 = {
-  hidden: {
-    x: 100,
-    opacity: 0,
-  },
-  visible: {
-    x: 0,
-    opacity: 1,
-  },
-};
 const Header = () => {
   return (
     <motion.header initial="hidden" whileInView={"visible"}>

@@ -39,7 +39,9 @@ p {
 }
 
 .item span {
-  color: #ef3a76;
+  background: linear-gradient(170deg, #ff008a 0%, #8f00ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: Roboto;
   font-size: 25px;
   font-style: normal;
@@ -49,7 +51,19 @@ p {
 
 .item .bold {
   color: #fff;
+  background-color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #fff;
   font-weight: 600;
+}
+
+.gif {
+  margin: 0 auto;
+}
+
+.gif img {
+  margin: 10px 0;
+  max-width: 450px;
 }
 
 @media (max-width: 758px) {
@@ -59,6 +73,10 @@ p {
 
   p {
     font-size: 32px;
+  }
+
+  .we {
+    max-height: 200px;
   }
 
   .about_text {
@@ -71,5 +89,13 @@ p {
 
   .item span {
     font-size: 20px;
+  }
+  .gif {
+    margin: 0 auto;
+  }
+
+  .gif img {
+    margin: 10px 0;
+    max-width: 150px;
   }
 }
